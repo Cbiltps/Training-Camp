@@ -2,15 +2,26 @@
 
 int my_strlen(char* s)
 {
-	if (*s != '\0')
+	int count = 0;
+	while (*s != '\0')
 	{
-		return 1 + my_strlen(s + 1);
+		count++;
+		s++;
 	}
-	else
-	{
-		return 0;
-	}
+	return count;
 }
+
+//int my_strlen(char* s)
+//{
+//	if (*s != '\0')
+//	{
+//		return 1 + my_strlen(s + 1);
+//	}
+//	else
+//	{
+//		return 0;
+//	}
+//}
 
 int main()
 {
